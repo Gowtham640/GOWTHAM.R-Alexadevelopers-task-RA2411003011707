@@ -33,9 +33,9 @@ body{
     border-top-style: none;
     border-bottom-style: none;
     position: fixed;
-    bottom: 0; /* Position it at the bottom */
-    left: 0; /* Align it to the left */
-    z-index: 100; /* Higher z-index to ensure it overlays other elements */
+    bottom: 0; 
+    left: 0; 
+    z-index: 100; 
 }
 @keyframes movein{
     from{
@@ -66,18 +66,18 @@ body{
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
 }
 #navbar {
-    width: 100%; /* Make it full width */
-    max-width: 20rem; /* Optional: Limit the maximum width */
+    width: 100%; 
+    max-width: 20rem;
     height: 5rem;
     position: fixed;
-    top: 0; /* Fix it to the top */
-    left: 0; /* Align it to the left */
-    right: 0; /* Align it to the right */
-    margin: 0 auto; /* Center it horizontally */
+    top: 0;  
+    left: 0; 
+    right: 0; 
+    margin: 0 auto; 
     z-index: 10000;
-    display: flex; /* Optional: Flex display if you have items inside */
-    justify-content: center; /* Center items inside the navbar */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     animation: nav ease-in-out;
     animation-duration: 2s;
 }
@@ -156,43 +156,34 @@ body{
     font-size: 7rem;
     text-align: center;
     color: white;
-    background: linear-gradient( #7c0f0f, #f70000); /* Gradient colors */
-    -webkit-background-clip: text; /* Clips the background to the text */
+    background: linear-gradient( #7c0f0f, #f70000); 
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: -1rem;
     text-shadow: 0px 0px 14px rgba(255, 0, 0, 0.6);
 }
 
-.container {
-    position: absolute; /* Use absolute positioning */
-    bottom: 0; /* Align to the bottom */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    overflow: hidden; /* Hide overflow */
-    width: 100%; /* Full width */
-    height: 3rem; /* Adjust height to match the text */
-}
 
 .animate {
-    display: inline-block; /* Ensure it displays as an inline block */
+    display: inline-block; 
     font-family: goth;
     font-size: 3rem;
-    position: absolute; /* Position absolutely within the container */
-    bottom: 0; /* Align to the bottom */
-    left: 100%; /* Start off-screen to the right */
-    white-space: nowrap; /* Prevents text from breaking */
+    position: absolute; 
+    bottom: 0; 
+    left: 100%; 
+    white-space: nowrap;
     color: rgb(0, 0, 0);
     text-shadow: 
         -1px -1px 0 rgba(255, 255, 255, 1),  
          1px -1px 0 rgba(255, 255, 255, 1),
         -1px 1px 0 rgba(255, 255, 255, 1),  
          1px 1px 0 rgba(255, 255, 255, 1);
-    animation: infini 30s linear infinite; /* Ensure animation runs continuously */
+    animation: infini 30s linear infinite; 
 }
 
 @keyframes infini {
     from { transform: translateX(0); } /* Start from the right */
-    to { transform: translateX(-100%); } /* Move to the left */
+    to { transform: translateX(-100%); } 
 }
 
 #about{
