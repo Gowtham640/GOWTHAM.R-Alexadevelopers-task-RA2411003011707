@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nproj.addEventListener('click', () => scrollToSection(projects));
     ncontact.addEventListener('click', () => scrollToSection(contact));
 });
-//scrolling has been done for footer
+
 function inview(section){
     section.classList.remove('footertext');
     section.classList.add('footertextactive');
@@ -48,19 +48,18 @@ function updateFooterClass() {
         projects: fproj,
         experience: fexp,
         skills: fskills,
-        certification: fcerti,  // Updated from "achievements"
-        extracurr: fec,     // This remains correct
-        contact: fcontacts        // Ensure this ID is correctly set in the HTML as well
+        certification: fcerti,  
+        extracurr: fec,     
+        contact: fcontacts      
     };
 
 
-    // Reset all footer classes first
     for (const key in sections) {
         sections[key].classList.remove('footertextactive');
         sections[key].classList.add('footertext');
     }
 
-    // Check visibility of each section
+
     for (const sectionKey in sections) {
         const section = document.getElementById(sectionKey);
         if (section && checkVisibility(section)) {
@@ -70,7 +69,7 @@ function updateFooterClass() {
     }
 }
 
-// Check visibility function
+
 function checkVisibility(element) {
     const rect = element.getBoundingClientRect();
     const elementHeight = rect.height;
@@ -80,30 +79,29 @@ function checkVisibility(element) {
 }
 
 
-// Attach the scroll event listener
 window.addEventListener('scroll', updateFooterClass);
 
 function updateNavClass() {
-    // Reset all nav elements to default state (remove shadow)
+   
     const navElements = [nwel, nproj, ncontact];
     navElements.forEach(nav => {
-        nav.style.boxShadow = 'none'; // Remove shadow
+        nav.style.boxShadow = 'none'; 
     });
 
-    // Check visibility of each section and set shadow accordingly
+    
     if (checkVisibility(welcome)) {
-        nwel.style.boxShadow = '0px 0px 100px rgba(255, 255, 255, 1)'; // Add shadow
+        nwel.style.boxShadow = '0px 0px 100px rgba(255, 255, 255, 1)'; 
     } else if (checkVisibility(projects)) {
-        nproj.style.boxShadow = '0px 0px 100px rgba(255, 255, 255, 1)'; // Add shadow
+        nproj.style.boxShadow = '0px 0px 100px rgba(255, 255, 255, 1)'; 
     } else if (checkVisibility(contact)) {
-        ncontact.style.boxShadow = '0px 0px 100px rgba(255, 255, 255, 1)'; // Add shadow
+        ncontact.style.boxShadow = '0px 0px 100px rgba(255, 255, 255, 1)'; 
     }
 }
 
-// Call updateNavClass in the scroll event listener
+
 window.addEventListener('scroll', () => {
-    updateFooterClass(); // Existing function
-    updateNavClass();    // New function for nav elements
+    updateFooterClass(); 
+    updateNavClass();    
 });
 
 
