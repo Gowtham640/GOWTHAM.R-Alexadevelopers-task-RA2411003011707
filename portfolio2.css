@@ -162,15 +162,22 @@ body{
     margin-top: -1rem;
     text-shadow: 0px 0px 14px rgba(255, 0, 0, 0.6);
 }
-
+#movein {
+    overflow: hidden; /* Prevents overflow of the animated text */
+    white-space: nowrap; /* Prevents line breaks */
+    width: 100%; /* Ensures the container takes full width */
+    position: relative; /* Allows absolute positioning of child */
+    height: 100px; /* Set height to avoid collapsing */
+    margin-top: 8%;
+}
 
 .animate {
     display: inline-block; 
-    font-family: goth;
+    font-family: goth; /* Make sure this font is available */
     font-size: 3rem;
     position: absolute; 
     bottom: 0; 
-    left: 100%; 
+    left: 100%; /* Start just outside the right edge */
     white-space: nowrap;
     color: rgb(0, 0, 0);
     text-shadow: 
@@ -183,7 +190,7 @@ body{
 
 @keyframes infini {
     from { transform: translateX(0); } /* Start from the right */
-    to { transform: translateX(-100%); } 
+    to { transform: translateX(-200%); } 
 }
 
 #about{
@@ -214,13 +221,19 @@ body{
     display:flex;
     flex-direction: column;
     align-items:start;
+    margin-top: -15%;
 }
-
-
+#button1{
+    margin-left: 5vw;
+    margin-top: -8%;
+}
+#ulist1{
+    margin-left: 3vw;
+}
 .edulist{
     font-family: lato;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 #projects{
     margin-left: 10vw;
@@ -254,12 +267,27 @@ body{
     overflow: hidden;   
     margin: 10%;
     flex-wrap: wrap;
+    transition: height 0.25s ease-in-out, width 0.25s ease-in-out; /* Smooth transition */
 }
-.card:hover{
-    height: 60vh;
-    width: 30vw;
-    padding-bottom: 20%;
+
+.card:hover {
+    height: 60vh; /* New height on hover */
+    width: 30vw;  /* New width on hover */
 }
+.card:hover .descheader {
+    font-size: 50px;
+    bottom: 30%;
+}
+.subdesc {
+    color: rgb(216, 0, 0);
+    font-family: poppins;
+    font-size: 30px;
+    /* Remove position and bottom */
+    margin-top: 10px; /* Optional: Add some spacing above */
+    z-index: 14;
+    margin-top: -100%;
+}
+
 .card::before {
     content: ""; 
     position: absolute; 
@@ -282,9 +310,9 @@ body{
     position: relative;
     z-index: 2; 
 }
-.descheader:hover{
+/*.descheader:hover{
     font-size: 50px;
-}
+}*/
 .video{
     position: absolute; /* Position video absolutely */
     top: 0;
@@ -477,20 +505,34 @@ body{
     margin-left: 5%;
 }
 .button{
-    height: 3rem;
+    height: auto;
     width: 8rem;
     background-color: rgba(0,0,0,0);
     border-style: solid;
     border-radius: 5rem;
     border-color: white;
     border-width: 2px;
+    transition: width 0.3s ease, height 0.3s ease; 
+}
+.button:hover{
+    height: auto;
+    width: 10rem;
+}
+.button:hover.buttontext{
+    font-family: poppins;
+    font-weight: 900;
 }
 .buttontext{
     font-family: poppins;
     color: white;
     text-align: center;
 
-}@media (max-width:1550px){
+}
+.highlight{
+    font-size: 22px;
+    font-weight: 600;
+}
+@media (max-width:1550px){
     .card{
         width: 500px;
         height:750px;

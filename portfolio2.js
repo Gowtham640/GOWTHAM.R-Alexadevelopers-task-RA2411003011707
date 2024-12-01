@@ -20,6 +20,14 @@ let skills=document.getElementById('skills');
 let extracurr=document.getElementById('extracurr');
 let contact=document.getElementById('contact');
 //footer and navbar done connected
+let button1=document.getElementById('button1');
+let edu=document.getElementById('edu');
+let ulist1=document.getElementById('ulist1');
+//button done
+button1.addEventListener('click',function(){
+    edu.removeAttribute('hidden');
+    ulist1.removeAttribute('hidden');
+})
 function scrollToSection(section) {
     section.scrollIntoView({ behavior: 'smooth' });
 }
