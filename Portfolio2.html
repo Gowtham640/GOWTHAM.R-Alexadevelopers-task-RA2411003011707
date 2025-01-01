@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Portfolio</title>
     <link rel="stylesheet" href="portfolio2.css">
@@ -59,7 +60,7 @@
         </div>
         <div id="education">
             <div class="button" id="button1">
-                <p class="buttontext">Know more about me!</p>
+                <p class="buttontext" id="knowbutton">Know more about me!</p>
             </div>
             <p class="header" id="edu" hidden>Education:</p>
             <ul id="ulist1" hidden>
@@ -68,149 +69,194 @@
                 <li class="edulist">SRMIST,KTR(2</li>
             </ul>
         </div>
-        <div id="projects">
-            <p id="proj" class="header">Projects:</p>
-            <div id="projectholder">
-                <a href="https://gowtham640.github.io/IEEE-CS-Community-Task-Gowtham.R-RA2411003011707/LIST.HTML" target="_blank" style="text-decoration: none;">
-                    <div id="project1" class="card">
-                        <video src="Todolist.mp4" muted loop autoplay class="video"></video>
-                        <p class="descheader">To Do List</p>
-                        <p class="subdesc" >It is a to do list</p>
-                    </div>
-                </a>
-                <a href="https://gowtham640.github.io/HACKBOXSRM-GOWTHAM.R-TASK-RA2411003011707/claude.html" target="_blank" style="text-decoration: none;">
-                    <div id="claudeai" class="card">
-                        <video src="claudeai.mp4" muted loop autoplay class="video"></video>
-                        <p class="descheader" id="claudtext">Claude AI login Replica</p>
-                        <p class="subdesc" >This is a replica of the claude ai website</p>
-                    </div>
-                </a>
-                <a href="https://gowtham640.github.io/DBUGLABS-GOWTHAM.R-RA2411003011707/sgallery.html" target="_blank" style="text-decoration: none;">
-                    <div id="gallery" class="card">
-                        <video src="gallerys.mp4" muted loop autoplay class="video"></video>
-                        <p class="descheader">Safe Gallery</p>
-                        <p class="subdesc" >This is a safe gallery where you can upload pics</p>
-                    </div>
-                </a>
-                <a href="https://gowtham640.github.io/MLSA-TASK-Gowtham.R-RA24113011707-/portfolio.html" target="_blank" style="text-decoration: none;">
-                    <div id="port" class="card">
-                        <video src="porttest.mp4" muted loop autoplay class="video"></video>
-                        <p class="descheader">Portfolio</p>
-                        <p class="subdesc" >This is a portfolio website</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div id="experience">
-            <p class="header" id="exp">Experience:</p>
-            <div id="expholder">
-                <div class="explist" id="ieeecs">
-                    <p class="exps">1. FullStack developer @ IEEE CS student chapter,SRMIST</p>
-                    <a href="https://www.linkedin.com/company/ieee-computer-society-srmist/mycompany/" target="_blank" style="text-decoration: none;">
-                        <img src="IEEECS logo.png" class="explogo">
-                    </a>
-                    
-                </div>
-                <div class="explist" id="dsc">
-                    <p class="exps">2. WebDeveloper @ The DataScienceClub,SRMIST</p>
-                    <a href="https://www.linkedin.com/company/the-data-science-club-srmist/mycompany/" target="_blank" style="text-decoration: none;">
-                        <img src="dsc logo.jpg" class="explogo">
-                    </a>
-                </div>
-                <div class="explist" id="htbt">
-                    <p class="exps">3. WebDev Specialist @ Hack The Box,SRMIST</p>
-                    <a href="https://www.linkedin.com/company/htbsrmist/mycompany/" target="_blank" style="text-decoration: none;">
-                        <img src="htb logo.jpg" class="explogo">
-                    </a>
-                </div>
-                <div class="explist" id="htbc">
-                    <p class="exps">4. Corporate Associate @ Hack The Box,SRMIST</p>
-                    <a href="https://www.linkedin.com/company/htbsrmist/mycompany/" target="_blank" style="text-decoration: none;">
-                        <img src="htb logo.jpg" class="explogo">
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        <div id="certification">
-            <p class="header" id="achiheader">Certifications:</p>
-            <div id="achiholder">
-                <div id="wipro">
-                    <p class="exps">1. Certified Wipro Codenex's Web Developer</p>
-                    <a href="https://cert.diceid.com/cid/1EygUKMisJ" target="_blank" style="text-decoration: none;">
-                        <div class="button">
-                            <p class="buttontext">Certificate</p>
+        <div id="massivecontainer">
+            <div id="projects">
+                <p id="proj" class="header">Projects:</p>
+                <div id="projectholder">
+                    <a href="https://gowtham640.github.io/IEEE-CS-Community-Task-Gowtham.R-RA2411003011707/LIST.HTML" target="_blank" style="text-decoration: none;">
+                        <div id="project1" class="card">
+                            <video src="Todolist.mp4" muted loop autoplay class="video"></video>
+                            <p class="descheader">To Do List</p>
+                            <p class="subdesc" >It is a to do list</p>
                         </div>
                     </a>
-                </div>  
-            </div>
-        </div>
-        <div id="skills">
-            <p class="header">Skills:</p>
-            <div id="tech" class="subclass">
-                <p class="subheader">Tech stack:</p>
-                <div id="stackholder">
-                    <div class="stacks" id="python">
-                        <img src="python logo.jpg" class="logoimg" height="150">
-                        <p class="nametext">Python</p>
-                    </div>
-                    <div class="stacks" id="html">
-                        <img src="HTML LOGO.jpg" class="logoimg" height="150">
-                        <p class="nametext">HTML</p>
-                    </div>
-                    <div class="stacks" id="css">
-                        <img src="CSS logo.jpg" class="logoimg" height="150">
-                        <p class="nametext">CSS</p>
-                    </div>
-                    <div class="stacks" id="js">
-                        <img src="JS logo.jpg" class="logoimg" height="150">
-                        <p class="nametext">JavaScript</p>
-                    </div>
-                    <div class="stacks" id="clang">
-                        <img src="C logo.jpg" class="logoimg" height="150">
-                        <p class="nametext">C language</p>
-                    </div>
+                    <a href="https://gowtham640.github.io/HACKBOXSRM-GOWTHAM.R-TASK-RA2411003011707/claude.html" target="_blank" style="text-decoration: none;">
+                        <div id="claudeai" class="card">
+                            <video src="claudeai.mp4" muted loop autoplay class="video"></video>
+                            <p class="descheader" id="claudtext">Claude AI login Replica</p>
+                            <p class="subdesc" >This is a replica of the claude ai website</p>
+                        </div>
+                    </a>
+                    <a href="https://gowtham640.github.io/DBUGLABS-GOWTHAM.R-RA2411003011707/sgallery.html" target="_blank" style="text-decoration: none;">
+                        <div id="gallery" class="card">
+                            <video src="gallerys.mp4" muted loop autoplay class="video"></video>
+                            <p class="descheader">Safe Gallery</p>
+                            <p class="subdesc" >This is a safe gallery where you can upload pics</p>
+                        </div>
+                    </a>
+                    <a href="https://gowtham640.github.io/MLSA-TASK-Gowtham.R-RA24113011707-/portfolio.html" target="_blank" style="text-decoration: none;">
+                        <div id="port" class="card">
+                            <video src="porttest.mp4" muted loop autoplay class="video"></video>
+                            <p class="descheader">Portfolio</p>
+                            <p class="subdesc" >This is a portfolio website</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div id="nontech" class="subclass">
-                <p class="subheader" id="otherskills">Other skills:</p>
-                <ul class="ulist">
-                    <li class="edulist">Video editing</li>
-                    <li class="edulist">Audio editing</li>
-                    <li class="edulist">Photo editing</li>
-                    <li class="edulist">Man management</li>
+            <div id="experience">
+                <p class="header" id="exp">Experience:</p>
+                <div id="expholder">
+                    <div class="explist" id="ieeecs">
+                        <p class="exps">1. FullStack developer @ IEEE CS student chapter,SRMIST</p>
+                        <a href="https://www.linkedin.com/company/ieee-computer-society-srmist/mycompany/" target="_blank" style="text-decoration: none;">
+                            <img src="IEEECS logo.png" class="explogo">
+                        </a>
+                        
+                    </div>
+                    <div class="explist" id="dsc">
+                        <p class="exps">2. WebDeveloper @ The DataScienceClub,SRMIST</p>
+                        <a href="https://www.linkedin.com/company/the-data-science-club-srmist/mycompany/" target="_blank" style="text-decoration: none;">
+                            <img src="dsc logo.jpg" class="explogo">
+                        </a>
+                    </div>
+                    <div class="explist" id="htbt">
+                        <p class="exps">3. WebDev Specialist @ Hack The Box,SRMIST</p>
+                        <a href="https://www.linkedin.com/company/htbsrmist/mycompany/" target="_blank" style="text-decoration: none;">
+                            <img src="htb logo.jpg" class="explogo">
+                        </a>
+                    </div>
+                    <div class="explist" id="htbc">
+                        <p class="exps">4. Corporate Associate @ Hack The Box,SRMIST</p>
+                        <a href="https://www.linkedin.com/company/htbsrmist/mycompany/" target="_blank" style="text-decoration: none;">
+                            <img src="htb logo.jpg" class="explogo">
+                        </a>
+                        
+                    </div>
+                    <div class="explist" id="adt">
+                        <p class="exps">5. Full stack developer @ Alexa Developers SRM</p>
+                        <a href="https://www.linkedin.com/company/alexa-developers-srm/posts/?feedView=all" target="_blank" style="text-decoration: none;">
+                            <img src="alexadev logo.jpg" class="explogo">
+                        </a>
+                        
+                    </div>
+                    <div class="explist" id="adc">
+                        <p class="exps">6. Events associate @ Alexa Developers SRM</p>
+                        <a href="https://www.linkedin.com/company/alexa-developers-srm/posts/?feedView=all" target="_blank" style="text-decoration: none;">
+                            <img src="alexadev logo.jpg" class="explogo">
+                        </a>
+                        
+                    </div>
+                    <div class="explist" id="dbt">
+                        <p class="exps">7. Full stack developer @ DBug Labs, SRMIST</p>
+                        <a href="https://www.linkedin.com/company/dbuglabs/" target="_blank" style="text-decoration: none;">
+                            <img src="dbuglabs logo.jpg" class="explogo">
+                        </a>
+                        
+                    </div>
+                    <div class="explist" id="dbc">
+                        <p class="exps">8. Corporate associate @ DBug Labs, SRMIST</p>
+                        <a href="https://www.linkedin.com/company/dbuglabs/" target="_blank" style="text-decoration: none;">
+                            <img src="dbuglabs logo.jpg" class="explogo">
+                        </a>
+                        
+                    </div>
+                    <div class="explist" id="skzc">
+                        <p class="exps">9. Corporate team member @ SRMKZILLA, SRMIST</p>
+                        <a href="https://www.linkedin.com/company/srmkzilla/posts/?feedView=all" target="_blank" style="text-decoration: none;">
+                            <img src="srmkzilla logo.jpg" class="explogo">
+                        </a>
+                        
+                    </div>
+                    <div class="explist" id="ieeessit">
+                        <p class="exps">10. Research & Development member @ IEEE SSIT, SRMIST</p>
+                        <a href="https://www.linkedin.com/company/ieee-srmist-ssit/posts/?feedView=all" target="_blank" style="text-decoration: none;">
+                            <img src="IEEESSIT logo.jpg" class="explogo">
+                        </a>
+                        
+                    </div>
                     
-                </ul>
+                    
+                </div>
             </div>
-
-        </div>
-        <div id="extracurr">
-            <p class="header" id="extraheader">Extra Curricular:</p>
-            <div id="extraholder">
-                <p class="extras">1.Vice Captain-Topaz house @ PSBB MS OMR(22-23)</p>
-                <p class="extras">2.Winning House Captain-Topaz House @PSBB MS OMR(23-24)</p>
-                <p class="extras">3.School Football team Captain @PSBB MS OMR(22-24)</p>
+            <div id="certification">
+                <p class="header" id="achiheader">Certifications:</p>
+                <div id="achiholder">
+                    <div id="wipro">
+                        <p class="exps">1. Certified Wipro Codenex's Web Developer</p>
+                        <a href="https://cert.diceid.com/cid/1EygUKMisJ" target="_blank" style="text-decoration: none;">
+                            <div class="button">
+                                <p class="buttontext">Certificate</p>
+                            </div>
+                        </a>
+                    </div>  
+                </div>
             </div>
-        </div>
-        <div id="contact">
-            <p id="special">Let's talk :)</p>
-            <div id="contactholder">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=grizigowtham@gmail.com&su=Subject%20Here&body=Message%20Here" target="_blank" style="text-decoration: none;">
-                    <img class="contactimg" src="email.png">
-                </a>
-                <a href="https://www.linkedin.com/in/gowtham-ramakrishna-rayapureddi-aaa60532a/" target="_blank" style="text-decoration: none;">
-                    <img class="contactimg" src="linkedin.png">
-                </a>
-                <a href="https://github.com/Gowtham640" target="_blank" style="text-decoration: none;">
-                    <img class="contactimg" src="github.png">
-                </a>
-                <a href="https://www.youtube.com/@SpeakFootball" target="_blank" style="text-decoration: none;">
-                    <img class="contactimg" src="youtube.png">
-                </a>
-                <a href="https://www.instagram.com/gowtham_64?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="text-decoration: none;">
-                    <img class="contactimg" src="instagram.png">
-                </a>
+            <div id="skills">
+                <p class="header">Skills:</p>
+                <div id="tech" class="subclass">
+                    <p class="subheader">Tech stack:</p>
+                    <div id="stackholder">
+                        <div class="stacks" id="python">
+                            <img src="python logo.jpg" class="logoimg" height="150">
+                            <p class="nametext">Python</p>
+                        </div>
+                        <div class="stacks" id="html">
+                            <img src="HTML LOGO.jpg" class="logoimg" height="150">
+                            <p class="nametext">HTML</p>
+                        </div>
+                        <div class="stacks" id="css">
+                            <img src="CSS logo.jpg" class="logoimg" height="150">
+                            <p class="nametext">CSS</p>
+                        </div>
+                        <div class="stacks" id="js">
+                            <img src="JS logo.jpg" class="logoimg" height="150">
+                            <p class="nametext">JavaScript</p>
+                        </div>
+                        <div class="stacks" id="clang">
+                            <img src="C logo.jpg" class="logoimg" height="150">
+                            <p class="nametext">C language</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="nontech" class="subclass">
+                    <p class="subheader" id="otherskills">Other skills:</p>
+                    <ul class="ulist">
+                        <li class="edulist">Video editing</li>
+                        <li class="edulist">Audio editing</li>
+                        <li class="edulist">Photo editing</li>
+                        <li class="edulist">Man management</li>
+                        
+                    </ul>
+                </div>
+    
+            </div>
+            <div id="extracurr">
+                <p class="header" id="extraheader">Extra Curricular:</p>
+                <div id="extraholder">
+                    <p class="extras">1.Vice Captain-Topaz house @ PSBB MS OMR(22-23)</p>
+                    <p class="extras">2.Winning House Captain-Topaz House @PSBB MS OMR(23-24)</p>
+                    <p class="extras">3.School Football team Captain @PSBB MS OMR(22-24)</p>
+                </div>
+            </div>
+            <div id="contact">
+                <p id="special">Let's talk :)</p>
+                <div id="contactholder">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=grizigowtham@gmail.com&su=Subject%20Here&body=Message%20Here" target="_blank" style="text-decoration: none;">
+                        <img class="contactimg" src="email.png">
+                    </a>
+                    <a href="https://www.linkedin.com/in/gowtham-ramakrishna-rayapureddi-aaa60532a/" target="_blank" style="text-decoration: none;">
+                        <img class="contactimg" src="linkedin.png">
+                    </a>
+                    <a href="https://github.com/Gowtham640" target="_blank" style="text-decoration: none;">
+                        <img class="contactimg" src="github.png">
+                    </a>
+                    <a href="https://www.youtube.com/@SpeakFootball" target="_blank" style="text-decoration: none;">
+                        <img class="contactimg" src="youtube.png">
+                    </a>
+                    <a href="https://www.instagram.com/gowtham_64?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="text-decoration: none;">
+                        <img class="contactimg" src="instagram.png">
+                    </a>
+                </div>
             </div>
         </div>
     </div>

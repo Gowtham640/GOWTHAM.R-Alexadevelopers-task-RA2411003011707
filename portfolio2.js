@@ -23,10 +23,19 @@ let contact=document.getElementById('contact');
 let button1=document.getElementById('button1');
 let edu=document.getElementById('edu');
 let ulist1=document.getElementById('ulist1');
+
 //button done
 button1.addEventListener('click',function(){
-    edu.removeAttribute('hidden');
-    ulist1.removeAttribute('hidden');
+    if(edu.hasAttribute('hidden')){
+        edu.removeAttribute('hidden');
+        ulist1.removeAttribute('hidden');
+        massivecontainer.style.marginTop = '0%';
+    }
+    else{
+        edu.setAttribute('hidden', '');
+        ulist1.setAttribute('hidden', '');
+        massivecontainer.style.marginTop = '-25%'; 
+    }
 })
 function scrollToSection(section) {
     section.scrollIntoView({ behavior: 'smooth' });

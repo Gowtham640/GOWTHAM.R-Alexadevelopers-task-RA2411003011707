@@ -57,6 +57,12 @@ body{
     font-family: poppins;
     color: white;
     font-size: 20px;
+    transition: height 0.75s ease-in-out, width 0.75s ease-in-out; /* Smooth transition */
+}
+.footertext:hover{
+    font-family: poppins;
+    color: white;
+    font-size: 22px;
 }
 .footertextactive{
     font-family: poppins;
@@ -278,15 +284,20 @@ body{
     font-size: 50px;
     bottom: 30%;
 }
-.subdesc {
+.card:hover .subdesc {
+    opacity: 1; /* Make it visible */
+    color: rgb(216, 0, 0); /* Change to desired color */
+    font-size: 50px; /* Larger size on hover */
+    bottom: 30%; /* Adjust position */
+}
+/*.subdesc {
     color: rgb(216, 0, 0);
     font-family: poppins;
     font-size: 30px;
-    /* Remove position and bottom */
-    margin-top: 10px; /* Optional: Add some spacing above */
+    margin-top: 10px;
     z-index: 14;
     margin-top: -100%;
-}
+}*/
 
 .card::before {
     content: ""; 
@@ -429,6 +440,11 @@ body{
     width:auto;
     margin: 1rem;
     border-radius: 6%;
+    transition: height 0.25s ease-in-out, width 0.25s ease-in-out; /* Smooth transition */
+}
+.explogo:hover {
+    height: 5.5rem;
+    width: auto;
 }
 #extracurr{
     margin-left: 10vw;
@@ -482,6 +498,7 @@ body{
     border-color: silver;
     border-width: 2px;
     border-radius: 50%;
+    transition: height 0.25s ease-in-out, width 0.25s ease-in-out; /* Smooth transition */
 }
 .contactimg:hover{
     height: 4rem;
@@ -494,7 +511,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items:start;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 #achiholder{
     width: 90vw;
@@ -532,6 +549,9 @@ body{
     font-size: 22px;
     font-weight: 600;
 }
+#massivecontainer{
+    margin-top: -25%;
+}
 @media (max-width:1550px){
     .card{
         width: 500px;
@@ -541,11 +561,19 @@ body{
         margin-top: -35%;
     }
     #experience{
-        margin-top: 60%;
+        margin-top: 70%;
+        margin-bottom: 35%;
     }
     .logoimg{
         width: 200px;
         height: 200px;
+    }
+    #skills{
+        margin-top: -20%;
+        margin-bottom:30% ;
+    }
+    #nontech{
+        margin-top: -15%;
     }
 }   
 @media (max-width:1250px){
@@ -566,6 +594,10 @@ body{
     #extracurr{
         margin-top: 40%;
     }
+    .card{
+        height: 500px;
+        width: 500px;
+    }
 } 
 @media (max-width:1110px){
     .card{
@@ -576,17 +608,40 @@ body{
         margin-top: -35%;
     }
     #experience{
-        margin-top: 250%;
+        margin-top: 30%;
     }
     .logoimg{
         width: 170px;
         height: 170px;
     }
+    #certification{
+        margin-top: 60%;
+    }
+    #extracurr{
+        margin-top: -10%;
+    }
+    .footertext{
+        font-size: 12px;
+    }
+    .footertext:hover{
+        font-size: 14px;
+    }
+    .footertextactive{
+        font-size: 15px;
+    }
+    .logoimg{
+        width: 150px;
+        height: 150px;
+    }
+    .card{
+        height: 400px;
+        width: 400px;
+    }
 }     
 @media (max-width:1000px){
     .card{
         width: 400px;
-        height:600px;
+        height:400px;
     }
     #nontech{
         margin-top: -45%;
@@ -595,18 +650,252 @@ body{
         width: 150px;
         height: 150px;
     }
+    #certification{
+        margin-top: 70%;
+    }
+    .footertext{
+        font-size: 10px;
+    }
+    .footertext:hover{
+        font-size: 14px;
+    }
+    .footertextactive{
+        font-size: 15px;
+    }
 }  
-@media (max-width:500px){
+@media (max-width: 750px) {
+    .animate {
+        margin-top: 50%;
+    }
+    #about {
+        margin-top: -10px;
+    }
+    #button1 {
+        margin-top: -10%;
+    }
+    #projects {
+        margin-top: -80%;
+    }
     .card{
-        width: 200px;
+        width: 300px;
         height:300px;
     }
+    #certification{
+        margin-top:280%;
+    }
     .logoimg{
-        width: 150px;
-        height: 150px;
+        height: 100px;
+        width: 100px;
+    }
+    #extracurr{
+        margin-top: 10%;
+    }
+    .explogo{
+        width: auto;
+        height:60px;
+    }
+    #footer{
+        height: 100%;
+    }
+    #name{
+        font-size: 4.5rem;
+    }
+    #to{
+        margin-top: 0%;
+        font-size: 1.5rem;
+    }
+    #wel{
+        font-size: 1.5rem;
     }
 }
+@media (max-width: 500px) {
+    .logoimg {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    
+    .animate {
+        font-size: 1rem !important;
+    }
+    
+    #name {
+        margin-top: 7% !important;
+        margin-bottom: 10% !important;
+        font-size: 2.7rem !important;
+    }
+    
+    #to {
+        margin-top: 0% !important;
+        font-size: 1rem !important;
+        margin-bottom: 30%;
+    }
+    
+    #wel {
+        font-size: 1rem !important;
 
+    }
+    #about{
+        margin-top: -10% !important;
+    }
+    #intro{
+        font-size:15px;
+    }
+    .highlight{
+        font-size: 17px;
+    }
+    #button1{
+        height: 50px;
+        width: auto;
+        margin-top: -40%!important ;
+    }
+    #knowbutton{
+        font-size: 12px;
+    }
+    #projects{
+        margin-top: -140% !important;
+    }
+    .card {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    #footer{
+        width: 12%;
+    }
+    .header{
+        font-size: 50px;
+    }
+    .footertext{
+        font-size: 8px;
+    }
+    .footertext:hover{
+        font-size: 8px;
+    }
+    .footertextactive{
+        font-size: 8px;
+    }
+    .exps{
+        font-family: poppins;
+        font-size: 1.2rem;
+        color: white
+    }
+    .explogo{
+        height: 40px !important;
+        width: auto;
+    }
+    #certification{
+        margin-top: 200% !important;
+    }
+    #skills{
+        margin-top: -50%;
+    }
+    .logoimg{
+        height: 78px !important;
+        width: 78px !important ;
+        margin-top: -100%!important;
+    }
+    #extracurr{
+        margin-bottom: 50% !important;
+    }
+    .extras{
+        font-size: 20px;
+    }
+    .nametext{
+        font-size: 0rem !important;
+    }
+    #extracurr{
+        margin-top: 100% !important;
+    }
+    #footerholder{
+        margin-top: 600%;
+    }
+}
+@media (max-width:300px) {
+    /*#navbar{
+        width: 10rem; 
+        height: 5rem;
+    }
+    #navbarholder{
+        width: 10rem;
+        height: 4rem;
+    }
+    .navelements{
+        width: 3rem;
+        height:3rem;
+    }
+    .navtext{
+        font-size: 15px;
+    }*/
+    #footer{
+        width:14%;
+    }
+    #footerholder{
+        margin-top: 600%;
+    }
+    #welcome{
+        margin-top: 10% !important;
+        background-size:cover;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat;
+        margin-left: 17% !important;
+        width: 100vw;
+    }
+    #wel{
+        margin-top: 60% !important;
+    }
+    #name{
+        font-size: 1.7rem !important ;
+        margin-top: 10% !important;
+    }
+    #about{
+        margin-top: -17% !important;
+    }
+    #projects{
+        margin-top: -220% !important;
+    }
+    #intro{
+        font-size: 12px;
+    }
+    .highlight{
+        font-size: 13px;
+    }
+    #button1{
+        margin-top: -100%!important;
+    }
+    #projects{
+        margin-top: -300% !important;
+    }
+    #experience{
+        margin-top: 120%;
+        margin-left: 16%;
+    }
+    #certification{
+        margin-top: 400% !important;
+        margin-left: 16%;
+    }
+    #skills{
+        margin-left: 16%!important;
+        margin-top: -150% !important;
+    }
+    #extracurr{
+        margin-left: 16%!important;
+        margin-top: 180%!important;
+    }
+    .contactimg{
+        height: 30px;
+        width: auto;
+    }
+    .header{
+        font-size: 40px;
+    }
+    #contact{
+        margin-left: 10vw;
+        width: 107vw;
+        height: 20vh;
+    }
+    #special{
+        font-size: 25px;
+    }
+}
 @media (max-height:725px){
     #contact{
         height:250px;
